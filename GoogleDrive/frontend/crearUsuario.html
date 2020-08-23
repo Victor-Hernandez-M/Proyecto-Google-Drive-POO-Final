@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear tu cuenta de google</title>
+    <link rel="icon" href="img/faviconGoogle.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/estilosCrearUsuario.css">
+</head>
+<body>
+    <div id="ventana1" style="display: block;">
+        <div class="row container-fluid">
+            <div class="col-xl-3 col-md-2 col-sm-0 col-0">
+            </div>
+            <div class="col-xl-6 col-md-8 col-sm-12 col-12" id="contenedor">
+                <div class="row">
+                    <div class="col-8">
+                        <img id="logo" src="img/google.png">
+                        <h4>Crear tu cuenta de Google</h4>
+                        <h5>Ir a Google Drive</h5>
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control" type="text" id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="text" id="apellido" placeholder="Apellido">
+                            </div>
+                        </div><br>
+                        
+                        <input class="form-control" type="text" id="correo" placeholder="Correo electronico" onkeyup="validarCorreo(this)"><br>
+                        <div class="alert alert-danger" id="error2" style="display: none;"></div>
+                        <p>Puedes usar letras, numeros y signos de puntuacion</p>
+                        <a href="index.html">Crea una nueva dirección de Gmail en su lugar</a><br>
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control" type="password" id="contrasena" placeholder="Contraseña">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="password" id="confirmar" placeholder="Confirmar contraseña" onkeyup="validarContrasena(this)">    
+                            </div>
+                        </div>
+                        <p>Usa 8 o más caracteres con una combinación de letras, números y símbolos</p>
+                        <a href="index.html">Acceder a tu cuenta en su lugar</a>
+                        <button class="btn btn-primary" id="siguiente1" onclick="cambiarVentana()" style="float: right;">Siguiente</button>
+                    </div>
+                    <div class="col-4" style="text-align: center; margin-top: auto; margin-bottom: auto;">
+                        <img src="img/nuevoUsuario.svg">
+                        <p>Una cuenta. Todos los servicios de Google a tu disposición.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-2 col-sm-0 col-0">
+            </div>
+        </div>
+    </div>
+    <div id="ventana2" style="display: none;">
+        <div class="row container-fluid">
+            <div class="col-xl-3 col-md-2 col-sm-0 col-0">
+            </div>
+            <div class="col-xl-6 col-md-8 col-sm-12 col-12" id="contenedor">
+                <div class="row">
+                    <div class="col-8">
+                        <img id="logo" src="img/google.png">
+                        <h4>Bienvenido a Google</h4>
+                        <div class="form-inline">
+                            <h7><i class="far fa-user-circle"><p id="correoDeUsuario"></p></i></h7>
+                        </div>
+                        <div>
+                            <input class="form-control" type="text" id="telefono" placeholder="Numero de telefono (opcional)">
+                        </div><br>
+                        <p>Usaremos tu número como medida de seguridad. Nadie podrá verlo.</p>
+                        <input class="form-control" type="text" id="correoDeRecuperacion" placeholder="Direccion de correo de recuperacion (opcional)" onkeyup="validarCorreo(this)""><br>
+                        <p>Lo usaremos para proteger tu cuenta</p>
+                        <div class="row">
+                            <div class="col-4">
+                                <input class="form-control" type="number" id="dia" placeholder="Dia">
+                            </div>
+                            <div class="col-4">
+                                <select class="form-control" id="mes">
+                                    <option value="Enero">Enero</option>
+                                    <option value="Febrero">Febrero</option>
+                                    <option value="Marzo">Marzo</option>
+                                    <option value="Abril">Abril</option>
+                                    <option value="Mayo">Mayo</option>
+                                    <option value="Junio">Junio</option>
+                                    <option value="Julio">Julio</option>
+                                    <option value="Agosto">Agosto</option>
+                                    <option value="Septiembre">Septiembre</option>
+                                    <option value="Octubre">Octubre</option>
+                                    <option value="Noviembre">Noviembre</option>
+                                    <option value="Diciembre">Diciembre</option>
+                                </select>    
+                            </div>
+                            <div class="col-4">
+                                <input class="form-control" type="text" id="ano" placeholder="año">
+                            </div>
+                        </div>
+                        <p>Tu fecha de nacimiento</p>
+                        <select class="form-control" id="genero">
+                            <option value="Mujer">Mujer</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                        </select>
+                        <div class="alert alert-danger" id="error1" style="display: none;"></div>
+                        <a href="https://support.google.com/accounts/answer/1733224?hl=es-419">Por que solicitamos esta informacion</a>
+                        <div>
+                            <button class="btn btn-outline-primary" id="atras" onclick="ventanaAtras()" style="float: left;">Atras</button>
+                            <button class="btn btn-primary" id="crearUsuario" onclick="validarFecha()" style="float: right;">Siguiente</button>    
+                        </div>
+                    </div>
+                    <div class="col-4" style="text-align: center; margin-top: auto; margin-bottom: auto;">
+                        <img src="img/nuevoUsuario.svg">
+                        <p>Una cuenta. Todos los servicios de Google a tu disposición.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-2 col-sm-0 col-0">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador-usuarios.js"></script>
+</body>
+</html>

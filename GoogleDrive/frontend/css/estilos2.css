@@ -1,0 +1,151 @@
+body {
+    font: normal 16px Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+.bg-light {
+    background-color: #ffffff !important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white white #E0E0E0;
+}
+.drive {
+    color: #5F6371;
+    font-size: 1.6rem;
+    padding: 0%;
+}
+.drive:hover {
+    color: #5F6371;
+}
+.drive:active {
+    text-decoration: underline;
+}
+.form-control {
+    background-color: #F1F3F4;
+    color: #6F6F70;
+    border: none;
+}
+.form-control-lg:active {
+    background-color: #ffffff;
+}
+.nuevo {
+    margin-left: 18px;
+    box-shadow: 2px 2px 4px rgb(192, 189, 189);
+    width: 45%;
+    font-size: inherit;
+    color: #212529;
+    background-color: #ffffff;
+    border-color: #D9D9D9;
+    border-radius: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu:hover {
+    background-color: #F5F5F5;
+}
+.menu:focus {
+    background-color: #E8F0FE;
+}
+.menu {
+    color: #52565d;
+    text-align: left;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: inherit;
+    line-height: 1.5;
+    border-radius: 20px;
+}
+
+.btn:focus{
+    color: #1967D2;
+    background-color: #E8F0FE;
+    }
+.fas {
+    color: #52565d;
+    padding: 0 10px;
+}
+.far {
+    color: #52565d;
+    padding: 0 10px;
+}
+
+.select-sim {
+    width:200px;
+    height:22px;
+    line-height:22px;
+    vertical-align:middle;
+    position:relative;
+    background:white;
+    border:1px solid #ccc;
+    overflow:hidden;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-footer {
+    border-top: none;
+}
+#botonCancelar{
+    background-color: #fff; 
+    color: black;
+    border: none;
+}
+#informacionAlmacenamiento{
+    width: 70%;
+    float: right;
+    color: #888d84;
+    padding-right: 2rem;
+}
+.progress {
+    height: .3rem;
+    padding-right: 2rem;
+}
+#comprarAlmacenamiento{
+    color: #1A73EC;
+    background-color: #fff;
+    border: none;
+    text-align: left;
+}
+.card {
+    margin: 5px 5px;
+}
+.card-img-top{
+    max-height: 9rem;
+    min-height: 9rem;
+    padding: 0px 0px;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0; 
+    padding-bottom: 0; 
+    margin-right: 0; 
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.input-error {
+    border: 1px solid red;
+}
+.input-success {
+    border: 1px solid rgb(82, 248, 82);
+}
+input:focus {
+    outline-width: 0;
+}

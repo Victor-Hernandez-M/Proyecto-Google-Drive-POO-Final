@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Google Drive</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" href="img/favicon.ico">
+	<style>
+		body {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			background-attachment: fixed;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div style="background-color: rgba(255,255,255,1.00); color: rgba(0,0,0,1.00)">
+		<div id="contenedor">
+			<section id="formulario">
+				<img src="img/cargando.gif" id="cargando" width="80%" height="20%" style="margin-left: auto; margin-right:auto; display:none">
+				<div id="acceder">
+					<img id="logo" src="img/google.png">
+					<h1>
+						<span>Acceder</span>
+					</h1> <br>
+					<div id="texto-ir">
+						<span>Ir a Google Drive</span> <br><br>
+					</div>
+					<div>
+						<input id="correo" class="form-control" type="email" placeholder="Correo electronico o telefono">
+						<input id="contrasena" class="form-control" type="password" placeholder="contraseña" style="display: none;">
+						<div class="alert alert-danger" id="error" style="display: none;"></div>	
+					</div>
+				</div>
+				<button type="button" class="btn btn-link">¿Olvidades tu correo electronico?</button>
+				<div id="informacion">
+					<br>¿Esta no es tu computadora? Usa el modo de invitado para navegar de forma privada.
+					<a href="home.html">Más información</a>
+				</div> <br><br>
+				<div class="">
+					<span id="crear-cuenta"><a href="crearUsuario.html">Crear cuenta</a></span>
+					<div id="botonesIniciarSesion">
+						<button class="btn btn-primary" id="siguiente" onclick="verificarEmail()" type="button">Siguiente</button>
+					</div>	
+				</div>
+			</section>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/controlador-login.js"></script>
+</body>
+</html>

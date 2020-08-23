@@ -1,0 +1,13 @@
+{
+    "name": "victo/google-drive",
+    "description": "Base de datos de google drive",
+    "authors": [
+        {
+            "name": "Victor Hernandez",
+            "email": "victorleonardo29@hotmail.com"
+        }
+    ],
+    "require": {
+        "kreait/firebase-php": "4.32"
+    }
+}

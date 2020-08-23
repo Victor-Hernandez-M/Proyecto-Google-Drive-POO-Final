@@ -1,0 +1,96 @@
+/* CSS Document */
+#login {
+	background-color: rgba(255,255,255,1.00);
+	border-radius: 5px;
+}
+#logo {
+    position: relative;
+    top: -20px;
+    margin: 0%;
+}
+#formulario {
+    white-space: normal;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    min-height: 500px;
+    width: 430px;
+    border-radius: 10px;
+    background-position: center center;
+    padding: 48px 40px 36px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 95px;
+    border: 1px solid rgb(228, 221, 221);
+}
+#acceder {
+    text-align: center;
+    margin-top: 0%;
+}
+
+#acceder h1 {
+    padding: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+#acceder span {
+    padding-top: 0%;
+}
+#texto-ir {
+
+    color: #202124;
+    font-size: 16px;
+}
+#informacion {
+    color: #5f6368;
+    font-size: 14px;
+}
+#crear-cuenta {
+    cursor: pointer;
+    color: #1a73e8;
+    font-size: inherit;
+    float: left;
+}
+#siguiente {
+    background-color: #1b73e6;
+    margin: auto;
+    float: right;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    height: 2.5rem;
+}
+#siguiente:hover {
+    background-color: #287AE6;
+}
+#contenedor {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#siguiente span{
+    color: #ffffff;
+}
+.btn-link {
+    font-weight: bolder;
+    font-size: inherit;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 0px none rgb(255, 255, 255);
+    text-decoration: none;
+}
+.btn-link:hover {
+    border: 0px none rgb(255, 255, 255);
+    color: #2077E9;
+    text-decoration: none;
+}
+.idioma{
+    font-size: x-small;
+    border-color: #ffffff;
+    width: auto;
+    height: auto;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
